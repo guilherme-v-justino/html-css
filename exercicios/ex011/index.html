@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Abra em dispositivos diferentes ou mude o tamanho do navegador</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="Foto flexível">
+    </picture>
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos adicionar um arquivo de áudio para ser executado</p>
+    <audio src="midia/guanacast-33.mp3" controls autoplay></audio> <!-- Mp3, WAV(evitar) ou OGG-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    </audio>
+    <h1>Reproduzindo vídeos</h1>
+    
+</body>
+</html>
