@@ -5,13 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela 01</title>
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 300px;
+            text-align: center;
+        }
+        td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
    <table>
     <tr>
         <td>1</td>
         <td>2</td>
-        <td>3</td>
+        <td rowspan="2">3</td>
         <td>4</td>
     </tr>
     <tr>
@@ -20,12 +31,12 @@
         <td>7</td>
     </tr>
     <tr>
-        <td>8</td>
+        <td colspan="3">8</td>
         <td>9</td>
     </tr>
     <tr>
-        <td>10</td>
-        <td>11</td>
+        <td rowspan="2">10</td>
+        <td colspan="2">11</td>
         <td>12</td>
     </tr>
     <tr>
